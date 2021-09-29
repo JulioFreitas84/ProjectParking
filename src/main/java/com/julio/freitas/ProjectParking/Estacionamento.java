@@ -11,6 +11,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.io.Serializable;
 import java.time.Instant;
 import java.util.List;
 import java.util.Objects;
@@ -20,15 +21,16 @@ import java.util.Objects;
 @ToString
 @AllArgsConstructor
 @Entity
-public class Estacionamento {
+public class Estacionamento implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private Double valorHora = 1.00;
+    private Double valorHora;
     private Double totalFaturamento;
     private Double totalFaturamentoCarro;
     private Double totalFaturamentoMoto;
     private Double totalFaturamentoUtilitario;
+
 
     public Estacionamento() {
     }

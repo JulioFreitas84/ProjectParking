@@ -1,6 +1,6 @@
 package com.julio.freitas.ProjectParking.entities;
 
-import com.julio.freitas.ProjectParking.Veiculo;
+import com.julio.freitas.ProjectParking.service.Veiculo;
 
 import javax.persistence.Entity;
 

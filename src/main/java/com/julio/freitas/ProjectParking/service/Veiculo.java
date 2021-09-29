@@ -1,5 +1,6 @@
-package com.julio.freitas.ProjectParking;
+package com.julio.freitas.ProjectParking.service;
 
+import com.julio.freitas.ProjectParking.Estacionamento;
 import lombok.*;
 import org.hibernate.Hibernate;
 
@@ -11,7 +12,6 @@ import java.util.Objects;
 @Setter
 @RequiredArgsConstructor
 @ToString
-@EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @MappedSuperclass
 public class Veiculo implements Serializable {
 
