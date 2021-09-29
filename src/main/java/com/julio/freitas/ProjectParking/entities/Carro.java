@@ -1,4 +1,4 @@
-package com.julio.freitas.ProjectParking.entity;
+package com.julio.freitas.ProjectParking.entities;
 
 import com.julio.freitas.ProjectParking.Veiculo;
 import org.springframework.format.annotation.DateTimeFormat;

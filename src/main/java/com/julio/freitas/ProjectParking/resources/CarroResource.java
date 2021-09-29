@@ -1,6 +1,6 @@
 package com.julio.freitas.ProjectParking.resources;
 
-import com.julio.freitas.ProjectParking.entity.Carro;
+import com.julio.freitas.ProjectParking.entities.Carro;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,7 +17,6 @@ public class CarroResource {
     @GetMapping
     public ResponseEntity<List<Carro>> BuscarCarros(){
         List<Carro> listCar = new ArrayList<>();
-        listCar.add(1,null);
         return ResponseEntity.ok().body(listCar);
     }
     @GetMapping(value = "/{placa}")

@@ -1,6 +1,6 @@
 package com.julio.freitas.ProjectParking;
 
-import com.julio.freitas.ProjectParking.entity.Carro;
+import com.julio.freitas.ProjectParking.entities.Carro;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
