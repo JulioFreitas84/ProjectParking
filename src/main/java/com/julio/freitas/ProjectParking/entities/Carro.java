@@ -1,28 +1,27 @@
 package com.julio.freitas.ProjectParking.entities;
 
-import com.julio.freitas.ProjectParking.service.Veiculo;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.Table;
-import java.sql.Timestamp;
+import javax.persistence.Id;
 
 @Entity
-@Table(name = "Carro")
-public class Carro extends Veiculo {
-    //carro valor inteiro
-    @Column(length = 200)
+public class Carro  {
+    @Id
+    @Column(name = "id", nullable = false)
+    private Long id;
+
+    private String placa;
+    private String marca;
+    private String modelo;
+    private Double fatorEstacionamento;
+    private String horaEntrada;
+    private String horaSaida;
+    private Double totalEstacionamento;
+
+
     private String proprietario;
 
-    private Timestamp horaEntrada;
-
-
-    public Carro() {
+    public void ValorHora(){
+        //carro valor inteiro
     }
-
-    public Carro(String proprietario, Timestamp horaEntrada) {
-        this.proprietario = proprietario;
-        this.horaEntrada = horaEntrada;
-    }
-
 }
