@@ -31,7 +31,6 @@ public class Estacionamento implements Serializable {
     private Double totalFaturamentoMoto;
     private Double totalFaturamentoUtilitario;
 
-
     public Estacionamento() {
     }
     public Double ValorHora(){

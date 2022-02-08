@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 
 @Entity
 public class Utilitario extends Veiculo {
+    //15% adição para utilitario
     private String proprietario;
 
     public void ValorHora(){

@@ -1,20 +1,14 @@
 package com.julio.freitas.ProjectParking.repositories;
 
 import com.julio.freitas.ProjectParking.entities.Carro;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.Map;
-
 @Repository
-public class CarroRepository {
-
+public interface CarroRepository extends JpaRepository<Carro, Long> {
+    /*
     private Map<String, Carro> map;
-
-    public void save(Carro carro){
-
-    }
-
-    public void buscarPlaca(String placa){
-
-    }
+    public void save(Carro carro){ }
+    public void buscarPlaca(String placa){ }
+     */
 }
